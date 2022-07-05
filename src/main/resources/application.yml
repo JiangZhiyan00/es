@@ -1,0 +1,16 @@
+#es 配置
+spring:
+  data:
+    elasticsearch:
+      #连接方式
+      scheme: http
+      #集群名称
+      cluster-name: es-cluster
+      #集群节点
+      #      cluster-nodes: 127.0.0.1:9200
+      cluster-nodes: 33.69.6.98:9221
+      connection-request-timeout: 500
+      socket-timeout: 30000
+      connect-timeout: 1000
+      repositories:
+        enabled: true
